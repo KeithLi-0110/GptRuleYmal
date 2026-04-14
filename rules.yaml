@@ -1,0 +1,13 @@
+rules:
+  # ChatGPT / OpenAI domains → VPN
+  - DOMAIN-SUFFIX,openai.com,PROXY
+  - DOMAIN-SUFFIX,chatgpt.com,PROXY
+  - DOMAIN-SUFFIX,ai.com,PROXY
+  - DOMAIN-KEYWORD,openai,PROXY
+
+  # (Optional but recommended) API + CDN endpoints
+  - DOMAIN-SUFFIX,oaiusercontent.com,PROXY
+  - DOMAIN-SUFFIX,oaistatic.com,PROXY
+
+  # Everything else → Direct
+  - MATCH,DIRECT
